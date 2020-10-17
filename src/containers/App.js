@@ -26,7 +26,6 @@ class App extends Component{
 
 
     render(){
-        console.log("render");
         const filteredRobots = this.state.robots.filter(robots =>{
             return robots.name.toLowerCase().includes(this.state.searchField.toLowerCase());
         })
